@@ -41,12 +41,60 @@ function map(array, cb) {
   // Tiene que guardar el resultado devuelto por el callback en cada elemento dentro de un nuevo arreglo.
   // Retorna el nuevo arreglo.
   // Tu código:
+  //   var newArray = [];
+  //   array.forEach((element) => {
+  //     newArray.push(cb(element));
+  //   });
+  //   return newArray;
+
+  var newArray = array.map((element) => cb(element));
+  return newArray;
 }
+// var array = [1,2,3]
+// array.map((e)=>{e+1}) => [2,3,4]
+
+// array.forEach((element) => element)) => null
 
 function filter(arrayOfStrings) {
-  // Debes identificar todos los elementos el arreglo que comiencen con la letra "a".
+  // Debes identificar todos los elementos del arreglo que comiencen con la letra "a".
   // Luego retorna un nuevo arreglo con estos elementos.
   // Tu código:
+  // "abc" = [0] = "a"
+
+  //   var array = [ 1,2,3,4]
+  //   elemento = 1 // 2 // 3 //4
+  //   array.forEach(function(elemento){
+  //       console.log(elemento) => 1 // 2 // 3 // 4
+  //   })
+
+  // newArray = []
+  // arrayOfStrings=["abc","cde"]
+  //                         ^
+  //  elemento               ^
+  //  abc[0] => "a"
+  //  newArray = ["abc"]
+  //    cde[0] => "c"
+  //  newArray = ["abc"]
+  var newArray = [];
+  arrayOfStrings.forEach((element) => {
+    if (element[0] === "a") {
+      newArray.push(element);
+    }
+  });
+  return newArray;
+
+  // arrayOfStrings=["abc","cde"]
+  //                        ^
+  //  elemento              ^
+  //  array = []
+  //  condicion filter = push de todos lo elementos que cumplan una condicion "TRUE"
+  //  abc[0] === "a"  TRUE
+  //  array =["abc"]
+
+  //   var newArray = arrayOfStrings.filter((element) => {
+  //     return element[0] === "a";
+  //   });
+  //   return newArray;
 }
 
 var array = [
