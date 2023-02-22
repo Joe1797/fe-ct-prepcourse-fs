@@ -24,10 +24,10 @@ const nuevoModulo = 21 % 5 === null;
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
-   nuevoString,
-   nuevoNumero,
-   nuevoBoolean,
-   nuevaResta,
-   nuevaMultiplicacion,
-   nuevoModulo,
+  nuevoString,
+  nuevoNumero,
+  nuevoBoolean,
+  nuevaResta,
+  nuevaMultiplicacion,
+  nuevoModulo,
 };
