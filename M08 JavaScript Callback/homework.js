@@ -69,11 +69,12 @@ function filter(arrayOfStrings) {
 
   // newArray = []
   // arrayOfStrings=["abc","cde"]
-  //                         ^
-  //  elemento               ^
+  //                               ^
+  //  elemento                      ^
   //  abc[0] => "a"
   //  newArray = ["abc"]
   //    cde[0] => "c"
+
   //  newArray = ["abc"]
   var newArray = [];
   arrayOfStrings.forEach((element) => {
